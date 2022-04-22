@@ -1,0 +1,38 @@
+<!--<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Tab 1
+    </ion-title>
+  </ion-toolbar>
+</ion-header>-->
+
+<ion-content [fullscreen]="true">
+  <ion-label class="tab-home-title">Encontre o seu barbeiro favorito</ion-label>
+  <div class="select-location">
+    <ion-input placeholder="Onde você está?"></ion-input>
+    <ion-icon name="locate-outline"></ion-icon>
+  </div>
+  <div class="list-barbeiros">
+    <div class="item-barbeiro" *ngFor="let barbeiro of barbeiros">
+      <div class="item-barbeiro-image">
+        <img src="assets/img/user.png">
+      </div>
+      <div class="item-barbeiro-info">
+        <div class="item-barbeiro-info-name">
+          <h3 class="barbeiro-name">Erickson de Carvalho Vaz</h3>
+        </div>
+        <div class="item-barbeiro-info-rating">
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star-outline"></ion-icon>
+          <span class="nota">4.7</span>
+        </div>
+        <div class="item-barbeiro-info-address">
+          <button class="barbeiro-perfil" (click)="goToPerfil()">Ver Perfil</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>
